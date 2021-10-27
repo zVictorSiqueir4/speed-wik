@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
+
+@font-face{
+    font-family: 'Oswald', sans-serif;
+    src: url(fontes/Oswald-Bold.ttf) format('opentype');
+}
+
+@font-face{
+    font-family: 'Noto Sans JP', sans-serif;
+    src:url(fontes/NotoSansJP-Black.otf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Georama', sans-serif;
+    src: url(fontes/Georama_SemiCondensed-Bold.ttf) format('opentype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #FC560F;
+    --cor2: #D9620D;
+    --cor3: #F0891A;
+    --cor4: #DB8E12;
+    --cor5: #c7c5c5;
+
+    --fonte-destaque: 'Oswald';
+    --fonte-padrao: 'Noto Sans JP';
+    --fonte-subtitulo: 'Georama';
+}
+
+/* CSS - Index.html */
+body{
+    background-color: var(--cor5);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    position: relative;
+    padding: 30px;
+    text-align: center;
+}
+
+header > img{
+    padding-bottom: 5px;
+}
+
+header > p{
+    font-family: var(--fonte-subtitulo);
+}
+
+nav{
+    background-color: var(--cor3);
+    box-shadow: 0px 1px 9px 1px black;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+nav > a{
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 5px;
+}
+
+picture > img{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-image:linear-gradient(to top, var(--cor1), var(--cor3));
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px 0px 0px;
+}
+
+/* CSS - Showroom.html*/
+article{
+    font-family: var(--fonte-padrao);
+    text-indent: 20px;
+    text-align: center;
+}
+
+article > h1{
+    font-weight: bold;
+    background-image: linear-gradient(to right, black, transparent);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+article > p{
+    margin-top: 15px;
+}
+
+picture > img{
+    margin-top: 30px;
+}
+
+div#botao{
+    font-family: var(--fonte-padrao);
+    width: 170px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-left: 580px;
+    box-shadow: 2px 2px 9px 1px black;
+    position: relative;
+    background-color: rgb(182, 3, 3);
+    color: white;
+}
+
+div#botao > a > p{
+    font-family: var(--fonte-padrao);
+    margin-right: 15px;
+    color: white;
+}
+
+div#botao > a{
+    text-decoration: none;
+}
+
+div#botao:hover{
+    background-color: rgb(100, 2, 2);
+}
+
+/* CSS - RX-7 html */
+abbr > img{
+    margin-top: 20px;
+}
+
+audio{
+    margin-top: 15px;
+}
